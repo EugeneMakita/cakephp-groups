@@ -1,0 +1,34 @@
+{
+    "name": "qobo/cakephp-groups",
+    "description": "Groups plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+	"authors": [
+		{
+			"name": "Qobo Ltd",
+			"email": "info@qobo.biz",
+			"homepage": "https://www.qobo.biz",
+			"role": "Developer"
+		}
+	],
+    "require": {
+        "qobo/cakephp-utils": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.0",
+        "cakephp/cakephp-codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Groups\\": "src",
+            "CakeDC\\Users\\Test\\Fixture\\": "tests"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Groups\\Test\\": "tests",
+            "CakeDC\\Users\\Test\\": "./vendor/cakedc/users/tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
